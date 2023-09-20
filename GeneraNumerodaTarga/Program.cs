@@ -1,56 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeneraNumerodaTarga
+namespace Targa
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Inserisci una targa (es. ABC123):");
-            string targa = Console.ReadLine();
-
-            // Verifica che la targa sia nel formato corretto (6 caratteri)
-            if (targa.Length != 6)
+            string targa, targa1, targa2, targa3, targafinale;
+            int posizione2 = 0;
+            double posizione = 0, valore1 = 0, valore2 = 0;
+            double temp = 0, valore = 0;
+            char[] alfabetoInglese = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            Console.WriteLine("Inserisci una targa a piacere");
+            targa = Console.ReadLine();
+            targa1 = targa.Substring(2, 3);
+            targa2 = targa.Substring(0, 2);
+            targa3 = targa.Substring(5);
+            targafinale = targa2 + targa3; //vado a creare le prime 4 lettere della targa
+            for (int i = 0; i < targa1.Length; i++)
             {
-                Console.WriteLine("Formato targa non valido.");
-                return;
+                valore1 += Convert.ToInt32(targa1[i]) * Math.Pow(10, i);//math.pow viene utilizzato per calcolare una potenza di un numero.
             }
-
-            // Verifica che i primi tre caratteri siano lettere maiuscole
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < targafinale.Length; i++)
             {
-                if (!Char.IsLetter(targa[i]) || !Char.IsUpper(targa[i]))
+
+                posizione2 = Array.IndexOf(alfabetoInglese, targafinale[i]);
+
+                if (posizione2 != -1)
                 {
-                    Console.WriteLine("Formato targa non valido.");
-                    return;
+                    temp = posizione * Math.Pow(26, i);
+                    posizione = temp + posizione2;
                 }
             }
-
-            // Verifica che gli ultimi tre caratteri siano cifre
-            for (int i = 3; i < 6; i++)
-            {
-                if (!Char.IsDigit(targa[i]))
-                {
-                    Console.WriteLine("Formato targa non valido.");
-                    return;
-                }
-            }
-
-            // Calcola un numero corrispondente alla targa (somma dei valori ASCII dei caratteri)
-            int numero = 0;
-
-            foreach (char c in targa)
-            {
-                numero += (int)c;
-            }
-
-            Console.WriteLine($"Il numero corrispondente alla targa {targa} è: {numero}");
+            valore2 = posizione * Math.Pow(10, 3); 
+            valore = valore2 + valore1;
+            Console.WriteLine("Ecco il numero corrispondente");
+            Console.WriteLine(valore2);
+            
             Console.ReadLine();
         }
     }
 }
-

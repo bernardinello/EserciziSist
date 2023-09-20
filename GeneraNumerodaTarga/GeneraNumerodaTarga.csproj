@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{83FB677D-8CD8-440D-8844-8EAD2A07D2B0}</ProjectGuid>
+    <ProjectGuid>{45E330D0-8FD5-4F3D-BE95-CA7867458A02}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>GeneraNumerodaTarga</RootNamespace>
     <AssemblyName>GeneraNumerodaTarga</AssemblyName>

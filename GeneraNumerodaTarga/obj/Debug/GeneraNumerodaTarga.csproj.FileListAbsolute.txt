@@ -1,0 +1,8 @@
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\bin\Debug\GeneraNumerodaTarga.exe.config
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\bin\Debug\GeneraNumerodaTarga.exe
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\bin\Debug\GeneraNumerodaTarga.pdb
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\obj\Debug\GeneraNumerodaTarga.csproj.AssemblyReference.cache
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\obj\Debug\GeneraNumerodaTarga.csproj.SuggestedBindingRedirects.cache
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\obj\Debug\GeneraNumerodaTarga.csproj.CoreCompileInputs.cache
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\obj\Debug\GeneraNumerodaTarga.exe
+C:\Users\Paolo\Desktop\IIS VIOLA MARCHESINI\QUARTO ANNO\SISTEMI E RETI\GeneraNumerodaTarga\GeneraNumerodaTarga\obj\Debug\GeneraNumerodaTarga.pdb
